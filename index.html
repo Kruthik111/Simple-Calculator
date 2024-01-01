@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Simple Calculator</title>
 </head>
+
 <body>
-    <div class="calculator">
+    <div class="wrapper">
         <nav>
             <ul>
-                <ol>Calculator</ol>
-                <ol>Exchange Rate</ol>
+                <ol id="calculator">Calculator</ol>
+                <ol id="exchange">Exchange Rate</ol>
                 <ol>Unit converter</ol>
             </ul>
         </nav>
-        <input type="text" id="result" readonly value="23443">
-        <div class="temp-result">6743</div>
-        <div class="buttons">
-            <span class="operator">C</span>
-            <span class="operator">%</span>
-            <span class="operator">&lt;x</span>
-            <span class="operator">/</span>
-            <span class="number">7</span>
-            <span class="number">8</span>
-            <span class="number">9</span>
-            <span class="operator">x</span>
-            <span class="number">4</span>
-            <span class="number">5</span>
-            <span class="number">6</span>
-            <span class="operator">-</span>
-            <span class="number">1</span>
-            <span class="number">2</span>
-            <span class="number">3</span>
-            <span class="operator">+</span>
-            <span class="number">00</span>
-            <span class="number">0</span>
-            <span class="number">.</span>
-            <span class="number">=</span>
+        <div id="wrapper1">
+            <input type="text" id="result" readonly value="7">
+            <div class="temp-result"></div>
+            <div class="buttons">
+                <div class="btn-row">
+                    <span class="clear blue-btn">C</span>
+                    <span class="operator blue-btn">%</span>
+                    <span class="operator blue-btn">x</span>
+                    <span class="operator blue-btn">/</span>
+                </div>
+                <div class="btn-row">
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                    <span class="operator blue-btn">*</span>
+                </div>
+                <div class="btn-row">
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="operator blue-btn">-</span>
+                </div>
+                <div class="btn-row">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="operator blue-btn">+</span>
+                </div>
+                <div class="btn-row">
+                    <span class="number">00</span>
+                    <span class="number">0</span>
+                    <span class="number">.</span>
+                    <span class="operator blue-btn">=</span>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper2">
+            <input type="text" id="" readonly>
+            <div class="buttons">
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>C</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>00</span>
+                <span>0</span>
+                <span>.</span>
+                <span>x</span>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
