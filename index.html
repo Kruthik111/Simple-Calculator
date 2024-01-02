@@ -5,71 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/calculator-icon.webp" type="image/x-icon">
     <title>Simple Calculator</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <nav>
             <ul>
                 <ol id="calculator">Calculator</ol>
                 <ol id="exchange">Exchange Rate</ol>
-                <ol>Unit converter</ol>
+                <ol id="converter">Unit converter</ol>
             </ul>
         </nav>
         <div id="wrapper1">
-            <input type="text" id="result" readonly value="7">
+            <input type="text" id="result" readonly value="">
             <div class="temp-result"></div>
             <div class="buttons">
                 <div class="btn-row">
-                    <span class="clear blue-btn">C</span>
-                    <span class="operator blue-btn">%</span>
-                    <span class="operator blue-btn">x</span>
-                    <span class="operator blue-btn">/</span>
+                    <span class="clear calculator-btn blue-btn">C</span>
+                    <span class="calculator-btn blue-btn">%</span>
+                    <span class="calculator-btn blue-btn back">x</span>
+                    <span class="calculator-btn blue-btn">/</span>
                 </div>
                 <div class="btn-row">
-                    <span class="number">7</span>
-                    <span class="number">8</span>
-                    <span class="number">9</span>
-                    <span class="operator blue-btn">*</span>
+                    <span class="calculator-btn">7</span>
+                    <span class="calculator-btn">8</span>
+                    <span class="calculator-btn">9</span>
+                    <span class="calculator-btn blue-btn">*</span>
                 </div>
                 <div class="btn-row">
-                    <span class="number">4</span>
-                    <span class="number">5</span>
-                    <span class="number">6</span>
-                    <span class="operator blue-btn">-</span>
+                    <span class="calculator-btn">4</span>
+                    <span class="calculator-btn">5</span>
+                    <span class="calculator-btn">6</span>
+                    <span class="calculator-btn blue-btn">-</span>
                 </div>
                 <div class="btn-row">
-                    <span class="number">1</span>
-                    <span class="number">2</span>
-                    <span class="number">3</span>
-                    <span class="operator blue-btn">+</span>
+                    <span class="calculator-btn">1</span>
+                    <span class="calculator-btn">2</span>
+                    <span class="calculator-btn">3</span>
+                    <span class="calculator-btn blue-btn">+</span>
                 </div>
                 <div class="btn-row">
-                    <span class="number">00</span>
-                    <span class="number">0</span>
-                    <span class="number">.</span>
-                    <span class="operator blue-btn">=</span>
+                    <span class="calculator-btn">00</span>
+                    <span class="calculator-btn">0</span>
+                    <span class="calculator-btn">.</span>
+                    <span class="calculator-btn blue-btn">=</span>
                 </div>
             </div>
         </div>
         <div id="wrapper2">
-            <input type="text" id="" readonly>
-            <div class="buttons">
-                <span>7</span>
-                <span>8</span>
-                <span>9</span>
-                <span>C</span>
-                <span>4</span>
-                <span>5</span>
-                <span>6</span>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>00</span>
-                <span>0</span>
-                <span>.</span>
-                <span>x</span>
+            <div class="exchange-row">
+                <h3>Indian Rupee INR</h3>
+                <div style="margin-left: 20px;color: rgb(203, 200, 200);">&gt;</div>
+                <input class="exchange-input" type="text" value="100" id="exchange-input-1" readonly>
+            </div>
+            <div class="exchange-row">
+                <h3>US Dollar USD</h3>
+                <div style="margin-left: 20px;color: rgb(203, 200, 200);">&gt;</div>
+                <input type="text" class="exchange-input" value="1.20" id="exchange-input-2" readonly>
+            </div>
+            <div class="buttons buttons2">
+                <div class="btn-row2">
+                    <span class="exchange-btn">7</span>
+                    <span class="exchange-btn">8</span>
+                    <span class="exchange-btn">9</span>
+                    <span class="blue-btn exchange-btn">C</span>
+                </div>
+                <div class="btn-row2">
+                    <span class="exchange-btn">4</span>
+                    <span class="exchange-btn">5</span>
+                    <span class="exchange-btn">6</span>
+                </div>
+                <div class="btn-row2">
+                    <span class="exchange-btn">1</span>
+                    <span class="exchange-btn">2</span>
+                    <span class="exchange-btn">3</span>
+                </div>
+                <div class="btn-row2">
+                    <span class="exchange-btn">00</span>
+                    <span class="exchange-btn">0</span>
+                    <span class="exchange-btn">.</span>
+                    <span id="back" class="blue-btn back exchange-btn">x</span>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper3">
+            <div><img src="./assets/length-icon.jpg" alt="">
+                <div>length</div>
+            </div>
+            <div><img src="./assets/weight-icon.jpg" alt="">
+                <div>weight</div>
+            </div>
+            <div><img src="./assets/temperature-icon.jpg" alt="">
+                <div>temperature</div>
+            </div>
+            <div><img src="./assets/volume-icon.jpg" alt="">
+                <div>volume</div>
+            </div>
+            <div><img src="./assets/area-icon.jpg" alt="">
+                <div>area</div>
+            </div>
+            <div><img src="./assets/speed-icon.jpg" alt="">
+                <div>speed</div>
+            </div>
+            <div><img src="./assets/power-icon.jpg" alt="">
+                <div>power</div>
+            </div>
+            <div><img src="./assets/pressure-icon.jpg" alt="">
+                <div>pressure</div>
+            </div>
+        </div>
+    </div>
+    <div id="converter-container">
+        <div class="exchange-row" style="font-weight: 600;" id="exit"> ← Weight Conversion</div>
+        <div id="not-competed">
+            <div class="exchange-row">
+                <h3>Kilogram (kg)</h3>
+                <div style="margin-left: 20px;color: rgb(203, 200, 200);">&gt;</div>
+                <input class="exchange-input" type="text" value="100" id="exchange-input-1" readonly>
+            </div>
+            <div class="exchange-row">
+                <h3>Pound (lb)</h3>
+                <div style="margin-left: 20px;color: rgb(203, 200, 200);">&gt;</div>
+                <input type="text" class="exchange-input" value="220.46226" id="exchange-input-2" readonly>
+            </div>
+            <div class="buttons buttons2">
+                <div class="btn-row2">
+                    <span class="exchange-btn">7</span>
+                    <span class="exchange-btn">8</span>
+                    <span class="exchange-btn">9</span>
+                    <span class="blue-btn exchange-btn">C</span>
+                </div>
+                <div class="btn-row2">
+                    <span class="exchange-btn">4</span>
+                    <span class="exchange-btn">5</span>
+                    <span class="exchange-btn">6</span>
+                </div>
+                <div class="btn-row2">
+                    <span class="exchange-btn">1</span>
+                    <span class="exchange-btn">2</span>
+                    <span class="exchange-btn">3</span>
+                </div>
+                <div class="btn-row2">
+                    <span class="exchange-btn">00</span>
+                    <span class="exchange-btn">0</span>
+                    <span class="exchange-btn">.</span>
+                    <span id="back" class="blue-btn back exchange-btn">x</span>
+                </div>
             </div>
         </div>
     </div>
